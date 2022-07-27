@@ -1,0 +1,211 @@
+@media (min-width: 768px) {
+  .loader-container {
+    margin-top: 10vw;
+  }
+  .bookDetailsBodyContainer {
+    overflow-y: auto;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bookDetailsContainer {
+    width: 80vw;
+    border-radius: 16px;
+    margin-top: 34px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bookImageAndTitleContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 64px;
+  }
+  .bookDetailsImage {
+    height: 274px;
+    width: 235px;
+    border-radius: 14.130910873413086px;
+    margin-right: 48px;
+  }
+  .bookDetailsTitle {
+    font-family: 'Inter';
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    color: #334155;
+  }
+  .bookDetailsAuthorName {
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #475569;
+  }
+  .bookDetailsRating {
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+  }
+  .bookDetailsRatingIcon {
+    color: #fbbf24;
+  }
+  .bookDetailsStatusHeading {
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #475569;
+  }
+  .bookDetailsStatus {
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #0284c7;
+  }
+  .bookDetailsAuthorHeading {
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #334155;
+    align-self: flex-start;
+    margin: 32px 64px 10px 64px;
+  }
+  .bookDetailsAuthor {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #475569;
+    align-self: flex-start;
+    margin: 10px 64px 10px 64px;
+  }
+  .bookDetailsBookHeading {
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #334155;
+    align-self: flex-start;
+    margin: 32px 64px 10px 64px;
+  }
+  .bookDetailsBook {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #475569;
+    align-self: flex-start;
+    margin: 10px 64px 40px 64px;
+  }
+  .bookDetailsHorizontalLine {
+    width: 70vw;
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .loader-container {
+    margin-top: 40vw;
+  }
+  .bookDetailsBodyContainer {
+    overflow-y: auto;
+    height: 90vh;
+  }
+  .bookDetailsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .bookImageAndTitleContainer {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .bookDetailsImage {
+    height: 274px;
+    width: 235px;
+    border-radius: 12px;
+  }
+  .bookDetailsTitle {
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #334155;
+  }
+  .bookDetailsAuthorName {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #475569;
+  }
+  .bookDetailsRating {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  .bookDetailsRatingIcon {
+    color: #fbbf24;
+  }
+  .bookDetailsStatusHeading {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #475569;
+  }
+  .bookDetailsStatus {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #0284c7;
+  }
+  .bookDetailsHorizontalLine {
+    width: 85vw;
+  }
+  .bookDetailsAuthorHeading {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #334155;
+    align-self: flex-start;
+    margin: 24px 24px 8px 24px;
+  }
+  .bookDetailsAuthor {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #475569;
+    align-self: flex-start;
+    margin: 8px 24px 8px 24px;
+  }
+  .bookDetailsBookHeading {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #334155;
+    align-self: flex-start;
+    margin: 24px 24px 8px 24px;
+  }
+  .bookDetailsBook {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #475569;
+    align-self: flex-start;
+    margin: 8px 24px 8px 24px;
+  }
+}

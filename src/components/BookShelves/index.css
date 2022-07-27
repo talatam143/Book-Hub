@@ -1,0 +1,202 @@
+@media (min-width: 768px) {
+  .bookShelvesBodyContainer {
+    margin: 48px 150px;
+    display: flex;
+  }
+  .bookShelvesCategoriesContainer {
+    height: 1176px;
+    width: 256px;
+    background-color: #ffffff;
+    padding-top: 32px;
+    padding-left: 22px;
+  }
+  .bookShelvesCategoriesHeading {
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #334155;
+  }
+  .bookShelvesButtonsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .bookShelvesSelectedCategoriesButton {
+    background-color: transparent;
+    border-style: none;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #0284c7;
+    margin-bottom: 10px;
+  }
+  .bookShelvesCategoriesButton {
+    background-color: transparent;
+    border-style: none;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  .bookShelvesBooksContainer {
+    margin-left: 32px;
+    width: 100%;
+    overflow-y: auto;
+    height: 80vh;
+  }
+  .bookShelvesHeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .bookShelvesBooksHeading {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #334155;
+  }
+  .bookShelvesSearchInput {
+    height: 34px;
+    width: 264px;
+    border-radius: 4px 0 0 4px;
+    padding: 6px, 16px, 6px, 16px;
+    background-color: #ffffff;
+    border-color: #cbd5e1;
+    border-width: 1px;
+    font-family: 'Inter';
+    font-size: '14px';
+    font-weight: 500;
+    line-height: 24px;
+  }
+  .bookShelvesSearchButton {
+    height: 34px;
+    width: 52px;
+    border-radius: 0 4px 4px 0;
+    border-color: #cbd5e1;
+    border-width: 1px;
+  }
+  .bookShelvesUnorderedListContainer {
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .bookShelvesNoBooksContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .noBooksImage {
+    height: 297.7389221191406px;
+    width: 401.16070556640625px;
+  }
+  .noBooksParagraph {
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    color: #334155;
+  }
+  .bookShelvesSmallSearchContainer {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .bookShelvesBodyContainer {
+    margin: 24px;
+    overflow-y: auto;
+    height: 90vh;
+  }
+  .bookShelvesSmallSearchInput {
+    height: 36.000999450683594px;
+    width: 264px;
+    border-radius: 4px 0 0 4px;
+    padding: 6px, 16px, 6px, 16px;
+    background-color: #ffffff;
+    color: #cbd5e1;
+    border-color: #cbd5e1;
+    border-radius: 1px;
+  }
+  .bookShelvesSmallSearchButton {
+    height: 34px;
+    width: 52px;
+    border-radius: 0 4px 4px 0;
+    border-width: 1px;
+    border-color: #cbd5e1;
+    background-color: #edeff1;
+  }
+  .bookShelvesHeaderContainer {
+    display: none;
+  }
+  .bookShelvesCategoriesHeading {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #334155;
+  }
+  .bookShelvesSelectedCategoriesButton {
+    height: 24px;
+    width: 47px;
+    min-width: fit-content;
+    border-radius: 25px;
+    padding: 4px 15px;
+    background-color: #0284c7;
+    border-width: 1px;
+    border-color: #0284c7;
+    color: #f8fafc;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    margin-right: 4px;
+    margin-bottom: 14px;
+  }
+  .bookShelvesCategoriesButton {
+    height: 24px;
+    min-width: fit-content;
+    width: 62px;
+    border-radius: 25px;
+    padding: 4px 15px;
+    background-color: transparent;
+    border-width: 1px;
+    border-color: #0284c7;
+    margin-right: 4px;
+    margin-bottom: 14px;
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #0284c7;
+  }
+  .bookShelvesUnorderedListContainer {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .bookShelvesNoBooksContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .noBooksImage {
+    height: 176.01654052734375px;
+    width: 257.0172424316406px;
+    margin-top: 30px;
+  }
+  .noBooksParagraph {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #475569;
+    text-align: center;
+  }
+}

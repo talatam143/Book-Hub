@@ -1,0 +1,199 @@
+@media (min-width: 768px) {
+  .loginPageMainContainer {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  .loginPageLogo {
+    width: 45vw;
+  }
+
+  .loginPageLoginFormMainContainer {
+    background-color: #e5e5e5;
+    width: 55vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .loginPageLoginFormContainer {
+    width: 499px;
+    height: 484px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .websiteLogo {
+    width: 55px;
+    height: 48px;
+  }
+
+  .loginPageWebsiteTitle {
+    font-family: 'Almendra SC';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #0284c7;
+  }
+
+  .loginPageLogoContainer {
+    margin-top: 50px;
+    display: flex;
+  }
+
+  .loginPageForm {
+    width: 360px;
+  }
+
+  .loginFormLabels {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #5a7184;
+    display: inline-block;
+    margin-top: 27px;
+  }
+
+  .loginFormInputs {
+    margin-top: 12px;
+
+    height: 50px;
+    width: 360px;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: #c3cad9;
+    margin-top: 12px;
+  }
+
+  .loginPageLoginButton {
+    margin-top: 33px;
+    height: 50px;
+    width: 360px;
+    border-radius: 8px;
+    background-color: #0284c7;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #ffffff;
+    border-style: none;
+  }
+  .loginPageErrorLoginButton {
+    height: 50px;
+    width: 360px;
+    border-radius: 8px;
+    background-color: #0284c7;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #ffffff;
+    border-style: none;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .loginPageMainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #e5e5e5;
+  }
+  .loginPageLogo {
+    width: 216px;
+    height: 216px;
+    border-radius: 100px;
+    margin-top: 32px;
+  }
+  .loginPageLogoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .websiteLogo {
+    width: 31.5px;
+    height: 28px;
+  }
+  .loginPageWebsiteTitle {
+    font-family: 'Almendra SC';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #0284c7;
+  }
+  .loginFormInputs {
+    height: 56px;
+    width: 312px;
+    border-radius: 8px;
+    border: 1px solid #c3cad9;
+    margin-top: 8px;
+  }
+  .loginPageLoginButton {
+    height: 40px;
+    width: 312px;
+    border-radius: 8px;
+    background-color: #0284c7;
+    border-style: none;
+    color: #ffffff;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .loginPageErrorLoginButton {
+    height: 40px;
+    width: 312px;
+    border-radius: 8px;
+    background-color: #0284c7;
+    border-style: none;
+    color: #ffffff;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .loginFormLabels {
+    height: 19px;
+    width: 94px;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    text-align: left;
+    color: #5a7184;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.loginContainerErrorMessage {
+  color: #ef4444;
+  font-family: 'HK Grotesk';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  height: 18px;
+  width: 205px;
+  margin-top: 8px;
+}

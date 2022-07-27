@@ -1,0 +1,82 @@
+@media (max-width: 768px) {
+  .notFoundContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+  }
+  .notFoundImage {
+    height: 151.00146484375px;
+    width: 225px;
+  }
+  .NotFoundHeading {
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #334155;
+  }
+  .NotFoundPara {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #475569;
+  }
+  .NotFoundButton {
+    height: 32px;
+    width: 132px;
+    border-radius: 8px;
+    padding: 8px, 16px, 8px, 16px;
+    background-color: #0284c7;
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #ffffff;
+    border-style: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .notFoundContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .notFoundImage {
+    height: 300px;
+    width: 448px;
+  }
+  .NotFoundHeading {
+    font-family: 'Inter';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    color: #334155;
+  }
+  .NotFoundPara {
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #475569;
+  }
+  .NotFoundButton {
+    height: 48px;
+    width: 164px;
+    border-radius: 12px;
+    padding: 12px, 24px, 12px, 24px;
+    background-color: #0284c7;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #ffffff;
+    border-style: none;
+  }
+}

@@ -1,0 +1,130 @@
+@media (min-width: 768px) {
+  .eachBookListContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .eachBookImage {
+    height: 155px;
+    width: 133px;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+
+  .eachBookTitle {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #334155;
+  }
+
+  .eachBookAuthor {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #475569;
+  }
+
+  .eachBookRatingHeading {
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #475569;
+  }
+  .eachBookRatingIcon {
+    height: 16px;
+    width: 16px;
+    border-radius: 1px;
+    color: #fbbf24;
+    margin-right: 4px;
+  }
+  .eachBookStatusHeading {
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #475569;
+  }
+  .eachBookStatus {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #0284c7;
+  }
+  .eachBookLink {
+    text-decoration: none;
+    width: 45%;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .eachBookListContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .eachBookImage {
+    height: 155px;
+    width: 133px;
+    border-radius: 8px;
+    margin-right: 16px;
+  }
+
+  .eachBookTitle {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+
+    color: #334155;
+  }
+
+  .eachBookAuthor {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #475569;
+  }
+
+  .eachBookRatingHeading {
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0px;
+    text-align: left;
+
+    color: #475569;
+  }
+  .eachBookRatingIcon {
+    height: 16px;
+    width: 16px;
+    border-radius: 1px;
+    color: #fbbf24;
+    margin-right: 4px;
+  }
+  .eachBookStatusHeading {
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #475569;
+  }
+  .eachBookStatus {
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #0284c7;
+  }
+  .eachBookLink {
+    text-decoration: none;
+    margin: 8px;
+  }
+}
