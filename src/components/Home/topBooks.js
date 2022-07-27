@@ -9,7 +9,7 @@ function TopRatedBooks(params) {
     dots: false,
     infinite: false,
     speed: 1000,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 3,
     responsive: [
       {
@@ -48,7 +48,7 @@ function TopRatedBooks(params) {
                   src={coverPic}
                   alt="coverPicture"
                 />
-                <p className="eachTopRatedBookTitle">{title}</p>
+                <h1 className="eachTopRatedBookTitle">{title}</h1>
                 <p className="eachTopRatedBookAuthor">{authorName}</p>
               </li>
             </Link>

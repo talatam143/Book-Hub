@@ -9,7 +9,7 @@ function FetchError(params) {
     <div className="fetchErrorContainer">
       <img
         src="https://res.cloudinary.com/dh0pptyea/image/upload/v1658604707/fetchError_yi5ycf.png"
-        alt="error imag"
+        alt="failure view"
         className="fetchErrorImage"
       />
       <p className="fetchErrorParagraph">

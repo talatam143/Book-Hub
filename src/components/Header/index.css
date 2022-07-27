@@ -21,6 +21,10 @@
 }
 
 @media (max-width: 768px) {
+  .smallUnorderedList {
+    padding: 0;
+    margin: 0;
+  }
   .headerContainer {
     display: flex;
     justify-content: space-between;
@@ -35,6 +39,7 @@
     border-style: none;
     color: #475569;
     font-size: 25px;
+    padding-top: 7px;
   }
   .headerLogoHeading {
     line-height: 20px;
@@ -42,6 +47,9 @@
 }
 
 @media (min-width: 768px) {
+  .smallUnorderedList {
+    display: none;
+  }
   .headerContainer {
     display: flex;
     justify-content: space-between;

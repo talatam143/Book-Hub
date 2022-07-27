@@ -94,7 +94,7 @@ class Home extends Component {
                   </div>
                   <div className="homeTopRatedBooksContainer">
                     <div className="topRatedHeaderContainer">
-                      <p className="topRatedHeaderHeading">Top Rated Books</p>
+                      <h1 className="topRatedHeaderHeading">Top Rated Books</h1>
                       <Link to="/shelf">
                         <button type="button" className="topRatedHeaderButton">
                           Find Books
@@ -103,7 +103,7 @@ class Home extends Component {
                     </div>
                     <this.RenderPageState />
                   </div>
-                  <Footer />
+                  <Footer />)
                 </div>
               )}
             </>

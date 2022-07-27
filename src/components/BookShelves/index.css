@@ -112,7 +112,7 @@
   .bookShelvesBodyContainer {
     margin: 24px;
     overflow-y: auto;
-    height: 90vh;
+    height: 85vh;
   }
   .bookShelvesSmallSearchInput {
     height: 36.000999450683594px;
@@ -120,7 +120,7 @@
     border-radius: 4px 0 0 4px;
     padding: 6px, 16px, 6px, 16px;
     background-color: #ffffff;
-    color: #cbd5e1;
+    color: #334155;
     border-color: #cbd5e1;
     border-radius: 1px;
   }

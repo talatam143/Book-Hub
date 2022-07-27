@@ -23,52 +23,51 @@ function Header(props) {
             <Link className="headerLogoContainer" to="/">
               <img
                 src="https://res.cloudinary.com/dh0pptyea/image/upload/v1658354598/Group_7730_tx8vmr.png"
-                alt="website login"
+                alt="website logo"
                 className="headerLogoImage"
               />
               <p className="headerLogoHeading">ook Hub</p>
             </Link>
-            <button
-              type="button"
-              className="headerHamButton"
-              onClick={handleShowMenu}
-            >
-              <GiHamburgerMenu />
-            </button>
+            <ul className="smallUnorderedList">
+              <button
+                type="button"
+                className="headerHamButton"
+                onClick={handleShowMenu}
+              >
+                <GiHamburgerMenu />
+              </button>
+            </ul>
             <ul className="headerMenuContainer">
-              <li>
-                <Link
-                  to="/"
-                  className={
-                    pathname === '/'
-                      ? 'headerMenuLinks'
-                      : 'headerMenuNormalLink'
-                  }
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/shelf"
-                  className={
-                    pathname === '/shelf'
-                      ? 'headerMenuLinks'
-                      : 'headerMenuNormalLink'
-                  }
-                >
-                  Bookshelves
-                </Link>
-              </li>
-              <li>
-                <button
-                  type="button"
-                  className="headerLogoutButton"
-                  onClick={handleLogout}
-                >
-                  Logout
-                </button>
-              </li>
+              <Link
+                to="/"
+                className={
+                  pathname === '/' ? 'headerMenuLinks' : 'headerMenuNormalLink'
+                }
+              >
+                <li>
+                  <nav>Home</nav>
+                </li>
+              </Link>
+
+              <Link
+                to="/shelf"
+                className={
+                  pathname === '/shelf'
+                    ? 'headerMenuLinks'
+                    : 'headerMenuNormalLink'
+                }
+              >
+                <li>
+                  <nav>Bookshelves</nav>
+                </li>
+              </Link>
+              <button
+                type="button"
+                className="headerLogoutButton"
+                onClick={handleLogout}
+              >
+                Logout
+              </button>
             </ul>
           </div>
         )

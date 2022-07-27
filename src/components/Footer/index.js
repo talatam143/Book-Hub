@@ -11,7 +11,7 @@ function Footer() {
         <FaInstagram className="footerIcons" />
         <FaYoutube className="footerIcons" />
       </div>
-      <p className="footerParagraph">Contact Us</p>
+      <p className="footerParagraph">Contact us</p>
     </div>
   )
 }

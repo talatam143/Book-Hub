@@ -19,51 +19,43 @@ function MobileMenu(props) {
         const {handleShowMenu} = value
         return (
           <ul className="mobileMenuContainer">
-            <li>
-              <Link
-                to="/"
-                className={
-                  pathname === '/' ? 'selectedMenuLinks' : 'mobileMenuLinks'
-                }
-                onClick={handleShowMenu}
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/shelf"
-                className={
-                  pathname === '/shelf'
-                    ? 'selectedMenuLinks'
-                    : 'mobileMenuLinks'
-                }
-                onClick={handleShowMenu}
-              >
-                Bookshelves
-              </Link>
-            </li>
-            <li>
-              <button
-                type="button"
-                onClick={() => {
-                  handleLogout()
-                  handleShowMenu()
-                }}
-                className="mobileMenuLogoutButton"
-              >
-                Logout
-              </button>
-            </li>
-            <li>
-              <button
-                type="button"
-                className="mobileMenuCloseButton"
-                onClick={handleShowMenu}
-              >
-                <AiFillCloseCircle />
-              </button>
-            </li>
+            <Link
+              to="/"
+              className={
+                pathname === '/' ? 'selectedMenuLinks' : 'mobileMenuLinks'
+              }
+              onClick={handleShowMenu}
+            >
+              <li>Home</li>
+            </Link>
+
+            <Link
+              to="/shelf"
+              className={
+                pathname === '/shelf' ? 'selectedMenuLinks' : 'mobileMenuLinks'
+              }
+              onClick={handleShowMenu}
+            >
+              <li>Bookshelves</li>
+            </Link>
+
+            <button
+              type="button"
+              onClick={() => {
+                handleLogout()
+                handleShowMenu()
+              }}
+              className="mobileMenuLogoutButton"
+            >
+              Logout
+            </button>
+            <button
+              type="button"
+              className="mobileMenuCloseButton"
+              onClick={handleShowMenu}
+            >
+              <AiFillCloseCircle />
+            </button>
           </ul>
         )
       }}

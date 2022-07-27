@@ -73,7 +73,7 @@ class BookDetails extends Component {
                   className="bookDetailsImage"
                 />
                 <div>
-                  <p className="bookDetailsTitle">{bookDetails.title}</p>
+                  <h1 className="bookDetailsTitle">{bookDetails.title}</h1>
                   <p className="bookDetailsAuthorName">
                     {bookDetails.authorName}
                   </p>
@@ -83,7 +83,7 @@ class BookDetails extends Component {
                     {bookDetails.rating}
                   </p>
                   <p className="bookDetailsStatusHeading">
-                    Status :{' '}
+                    Status:
                     <span className="bookDetailsStatus">
                       {bookDetails.readStatus}
                     </span>
@@ -91,9 +91,9 @@ class BookDetails extends Component {
                 </div>
               </div>
               <hr className="bookDetailsHorizontalLine" />
-              <p className="bookDetailsAuthorHeading">About Author</p>
+              <h1 className="bookDetailsAuthorHeading">About Author</h1>
               <p className="bookDetailsAuthor">{bookDetails.aboutAuthor}</p>
-              <p className="bookDetailsBookHeading">About Book</p>
+              <h1 className="bookDetailsBookHeading">About Book</h1>
               <p className="bookDetailsBook">{bookDetails.aboutBook}</p>
             </div>
             <Footer />

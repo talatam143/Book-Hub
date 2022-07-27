@@ -13,26 +13,21 @@ import './index.css'
 
 class BookShelves extends Component {
   state = {
-    bookshelfName: '',
-    categoryName: '',
-    searchText: '',
+    bookshelfName: 'ALL',
+    categoryName: 'All',
+    searchValue: '',
     pageState: 'INITIAL',
     booksList: [],
   }
 
   componentDidMount = () => {
-    const {bookshelvesList} = this.props
-    this.setState({
-      categoryName: bookshelvesList[0].label,
-      bookshelfName: bookshelvesList[0].value,
-    })
     this.getBooks()
   }
 
   getBooks = async () => {
     this.setState({pageState: 'LOADING'})
-    const {bookshelfName, searchText} = this.state
-    const url = `https://apis.ccbp.in/book-hub/books?shelf=${bookshelfName}&search=${searchText}`
+    const {bookshelfName, searchValue} = this.state
+    const url = `https://apis.ccbp.in/book-hub/books?shelf=${bookshelfName}&search=${searchValue}`
     const token = Cookies.get('jwt_token')
     const options = {
       method: 'GET',
@@ -76,11 +71,11 @@ class BookShelves extends Component {
   }
 
   handleSearch = e => {
-    this.setState({searchText: e.target.value})
+    this.setState({searchValue: e.target.value})
   }
 
   RenderPage = () => {
-    const {pageState, booksList, searchText} = this.state
+    const {pageState, booksList, searchValue} = this.state
     switch (pageState) {
       case 'LOADING':
         return (
@@ -108,7 +103,7 @@ class BookShelves extends Component {
                   className="noBooksImage"
                 />
                 <p className="noBooksParagraph">
-                  Your search for {searchText} did not find any matches.
+                  Your search for {searchValue} did not find any matches.
                 </p>
               </div>
             )}
@@ -123,7 +118,7 @@ class BookShelves extends Component {
 
   render() {
     const {bookshelvesList} = this.props
-    const {categoryName, searchText} = this.state
+    const {categoryName, searchValue} = this.state
     return (
       <BookHubContext.Consumer>
         {value => {
@@ -140,7 +135,7 @@ class BookShelves extends Component {
                       type="search"
                       placeholder="Search"
                       className="bookShelvesSmallSearchInput"
-                      value={searchText}
+                      value={searchValue}
                       onChange={this.handleSearch}
                     />
                     <button
@@ -153,7 +148,9 @@ class BookShelves extends Component {
                     </button>
                   </div>
                   <div className="bookShelvesCategoriesContainer">
-                    <p className="bookShelvesCategoriesHeading">Bookshelves</p>
+                    <h1 className="bookShelvesCategoriesHeading">
+                      Bookshelves
+                    </h1>
                     <div className="bookShelvesButtonsContainer">
                       {bookshelvesList.map(category => (
                         <button
@@ -181,7 +178,7 @@ class BookShelves extends Component {
                           type="search"
                           placeholder="Search"
                           className="bookShelvesSearchInput"
-                          value={searchText}
+                          value={searchValue}
                           onChange={this.handleSearch}
                         />
                         <button

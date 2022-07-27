@@ -13,7 +13,7 @@ function Books(params) {
           className="eachBookImage"
         />
         <div>
-          <p className="eachBookTitle">{details.title}</p>
+          <h1 className="eachBookTitle">{details.title}</h1>
           <p className="eachBookAuthor">{details.authorName}</p>
           <p className="eachBookRatingHeading">
             Avg Rating <BsFillStarFill className="eachBookRatingIcon" />
